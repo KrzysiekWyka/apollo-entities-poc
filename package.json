@@ -1,0 +1,19 @@
+{
+  "name": "entity-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:api1": "node ./ac-api.js",
+    "start:api2": "node ./ac-api-segmentation.js",
+    "start:rover1": "rover dev --name ac-api --schema ac-api.graphql --url http://localhost:4001",
+    "start:rover2": "rover dev --name ac-api-segmentation --schema ac-api-segmentation.graphql --url http://localhost:4002"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/subgraph": "^2.5.0",
+    "apollo-server": "^3.12.0",
+    "dataloader": "^2.2.2"
+  }
+}
